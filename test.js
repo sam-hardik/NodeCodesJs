@@ -1,5 +1,5 @@
 var fullName="Hardik Gupta";
-var contact=8xxxxxxxx7;
+var contact=81325647;
 var contactString="8xxxxxxxx7";
 let email="pXXXXXXXXXXXXXXX@gmail.com";
 const bool=true;

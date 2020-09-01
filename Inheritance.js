@@ -1,3 +1,4 @@
+const logger = require('./logger.js')
 class Test{
     constructor(numberOne,numberTwo){
         this.numberOne=numberOne;
@@ -11,12 +12,14 @@ class Test{
     {
         try {
             if (numberTwo===0) {
-                throw Error("Cant divide by 0");
+                let errormsg ="Cant divide by 0";
+                throw Error(errormsg);
+                logger.info(errormsg)
             }
             else return numberOne/numberTwo;
         } catch (error) {
-            console.log(error);
-        }
+            logger.info(`${error}`);
+            }
     }
     subtraction (numberOne,numberTwo)
     {
@@ -38,5 +41,6 @@ var res=new Add(2,3);
 console.log(res.add(2,3)); // priority is given to local methods
 console.log(res.multiplication(5,5)); // child class inherits parent class
 //console.log(res.division(3,0)); // throws defined error
-console.log(res.division(10,2)); // child class inherits parent class
+console.log(res.division(10,3)); // child class inherits parent class
+logger.info(res.division(10,3));
 console.log(res.subtraction(3,0)); // defined in parent class and called from child class object which inherit Parent class

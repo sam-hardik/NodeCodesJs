@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Inheritance.js",
+  "dependencies": {
+    "jest": "^26.4.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sam-hardik/NodeCodesJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sam-hardik/NodeCodesJs/issues"
+  },
+  "homepage": "https://github.com/sam-hardik/NodeCodesJs#readme"
+}
